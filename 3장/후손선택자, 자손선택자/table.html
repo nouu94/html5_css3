@@ -1,0 +1,25 @@
+<!-- table 태그에 스타일 시트를 적용하기 위해선 table > tbody > tr > th 의 자손 선택자를 사용해야 된다. 아니면 후손으로 사용하든가! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table 태그 아래의 tr 태그 아래 th 태그의 color 속성에 red 키워드를 적용합니다 */
+        table > tr > th {color: red;}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Region</th>
+        </tr>
+        <tr>
+            <th>최현제</th>
+            <th>부천시 소사구 심곡본동</th>
+        </tr>
+    </table>
+</body>
+</html>
